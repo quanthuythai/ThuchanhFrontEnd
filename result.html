@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết quả</title>
+</head>
+<body>
+    <main>
+        <h3>Kết quả bài thi</h3>
+        <p>Số câu đã hoàn thành: <span id="completedCount">0</span></p>
+    </main>
+  <script> 
+        if(localStorage.getItem('completedCount')) { 
+            var completedCount = localStorage.getItem('completedCount'); 
+            document.getElementById('completedCount').innerText = completedCount;
+        }
+    </script>
+</body>
+</html>
