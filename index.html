@@ -22,9 +22,13 @@
             <div class="inputbox"> 
                 <input type="password" required>
                 <label for="loginPass">Lớp</label>
-            </div> 
-            <input type="submit" value="Làm bài thi" id="submit">
-             
+            </div>  
+            <button id="submit" onclick="handleSubmit()">Làm bài thi</button>
+            <script>
+                function handleSubmit() {
+                    window.location.href = "test.html";
+                }
+            </script>
         </form>
     </section>
 </body>
